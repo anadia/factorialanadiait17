@@ -48,5 +48,17 @@ public class FactorialTest {
 
 		assertEquals(expectedValue, result);
 	}
+	@Test
+	public void shouldFactorialOfFiveReturn120() {
 
+		long result = factorial.compute(5);
+		long expectedValue = 120;
+
+		assertEquals(expectedValue, result);
+	}
+	@Test (expected = RuntimeException.class)
+	public void shouldFactorialOfNegativeNumberRaiseAnException() {
+		factorial.compute(-1);
+	}
+	
 }
