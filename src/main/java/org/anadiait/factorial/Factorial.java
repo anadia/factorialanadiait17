@@ -9,10 +9,10 @@ public class Factorial {
 	    }else if (value == 2) {
 	    	return 2; 
 	    	
-	    }else if  (value == 2) {
+	    }else if  (value == 3) {
 	    	return 6;	
 	    }else 
-		return value = compute (value -1); 
+		return value * compute(value -1); 
 	}
 
 }
